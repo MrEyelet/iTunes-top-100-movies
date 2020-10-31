@@ -26,6 +26,6 @@ export const theme = {
     }
   },
   size: {
-    contentWidth: "48rem"
+    contentWidth: "120rem"
   }
-};
+}

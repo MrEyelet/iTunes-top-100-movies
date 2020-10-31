@@ -2,7 +2,12 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
   :root {
+    --base-level: 0;
+    --over-content: 100;
+    --modal: 1000;
 
+    --color-white: white;
+    --color-black: black;
   }
 
 
@@ -29,6 +34,6 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     font-family: TTCommons-regular,sans-serif;
-    font-size: 16px;
+    font-size: 10px;
   }
 `
