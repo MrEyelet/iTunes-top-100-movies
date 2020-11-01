@@ -19,6 +19,12 @@ export const MoviesListEl = styled.li`
   list-style-type: none;
   background-color: var(--color-black);
   transition: 0.5s opacity ease-in-out;
+  @media (max-width: 1024px) {
+    width: calc(50% - 1rem);
+  }
+  @media (max-width: 520px) {
+    width: 100%;
+  }
   :hover {
     cursor: pointer;
     .sc-gzVnrw {
@@ -117,5 +123,13 @@ export const MovieDesc = styled.p`
     border-right: 7px solid transparent;
     border-bottom: 15px solid tomato;
     transition: 0.5s opacity ease-in-out;
+  }
+  @media (max-width: 1024px) {
+    min-height: 1rem;
+    padding-left: 0;
+    position: relative;
+    top: unset;
+    z-index: var(--over-content);
+    color: white;
   }
 `
