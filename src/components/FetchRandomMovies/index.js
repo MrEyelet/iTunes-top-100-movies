@@ -38,16 +38,13 @@ export default class FetchRandomMovies extends React.Component {
             </Title>
             <MediaWrap>
               <img src={item["im:image"][2].label} alt="" />
-
               <VideoWrap>
                 <video controls name="media">
                   <source src={item.link[1].attributes.href} type="video/x-m4v" />
                 </video>
               </VideoWrap>
             </MediaWrap>
-            <MovieDesc>
-              <p>{item.summary.label}</p>
-            </MovieDesc>
+            <MovieDesc>{item.summary.label}</MovieDesc>
           </MoviesListEl>
         ))}
       </MoviesList>

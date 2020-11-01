@@ -6,6 +6,7 @@ export const MoviesList = styled.ul`
   justify-content: space-between;
   padding: 0;
   max-width: ${({ theme }) => theme.size.contentWidth};
+  padding: ${({ theme }) => theme.wrapper.space};
   margin: 0 auto;
 `
 
@@ -15,8 +16,9 @@ export const MoviesListEl = styled.li`
   width: calc(33.33% - 1rem);
   position: relative;
   margin-top: 1rem;
-  overflow: hidden;
   list-style-type: none;
+  background-color: var(--color-black);
+  trasnition: 0.5s opacity ease;
   :hover {
     cursor: pointer;
     .sc-gzVnrw {
@@ -25,6 +27,10 @@ export const MoviesListEl = styled.li`
     h2 {
       opacity: 0;
       transform: translateX(-2rem);
+    }
+    p {
+      color: white;
+      z-index: 1000;
     }
   }
   img {
@@ -45,7 +51,8 @@ export const Title = styled.h2`
   span {
     display: block;
     &:first-of-type {
-      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.6rem;
     }
   }
 `
@@ -55,7 +62,6 @@ export const VideoWrap = styled.div`
   height: 17rem;
   position: relative;
   left: -71%;
-  overflow: hidden;
   transition: 0.5s ease;
   transitiom-property: transform;
   will-cahnge: transform;
@@ -72,9 +78,21 @@ export const VideoWrap = styled.div`
 `
 export const MediaWrap = styled.div`
   display: flex;
+  overflow: hidden;
 `
 
-export const MovieDesc = styled.div`
-  padding: 1rem;
+export const MovieDesc = styled.p`
+  min-height: 17rem;
+  position: absolute;
+  top: 100%;
+  padding: 2rem 2rem 2rem 2rem;
+  margin-top: 0;
+  z-index: -1;
+  font-size: 1.6rem;
+  background-color: var(--color-black);
   color: var(--color-white);
+  color: black;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.5s ease;
+  transition-property: transform, color, background-color;
 `
