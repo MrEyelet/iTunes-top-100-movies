@@ -1,6 +1,6 @@
 import React from "react"
 
-import { LeadMovie } from "./styles"
+import { LeadMovie, LeadText } from "./styles"
 
 export default class FetchRandomMovies extends React.Component {
   state = {
@@ -31,6 +31,10 @@ export default class FetchRandomMovies extends React.Component {
         <video autoPlay muted loop>
           <source src={this.state.movies[0].link[1].attributes.href} />
         </video>
+        <LeadText>
+          <h1>Top 100 movies you can't miss</h1>
+          <p>lead description</p>
+        </LeadText>
       </LeadMovie>
     )
   }
