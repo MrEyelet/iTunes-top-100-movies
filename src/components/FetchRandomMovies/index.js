@@ -33,8 +33,8 @@ export default class FetchRandomMovies extends React.Component {
         {this.state.movies.map(item => (
           <MoviesListEl key={item.title.label}>
             <Title>
-              <h2>{item.title.label}</h2>
-              <p>{item.category.attributes.term}</p>
+              <span>{item.title.label}</span>
+              <span>{item.category.attributes.term}</span>
             </Title>
             <MediaWrap>
               <img src={item["im:image"][2].label} alt="" />

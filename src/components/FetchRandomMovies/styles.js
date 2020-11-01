@@ -17,24 +17,37 @@ export const MoviesListEl = styled.li`
   margin-top: 1rem;
   overflow: hidden;
   list-style-type: none;
+  :hover {
+    cursor: pointer;
+    .sc-gzVnrw {
+      transform: translateX(calc(71% + 8rem));
+    }
+    h2 {
+      opacity: 0;
+      transform: translateX(-2rem);
+    }
+  }
   img {
     z-index: var(--over-content);
-    :hover {
-      cursor: pointer;
-      + div {
-        transform: translateX(calc(71% + 8rem));
-      }
-    }
   }
 `
 
-export const Title = styled.div`
+export const Title = styled.h2`
   width: 50%;
   position: absolute;
   left: 13rem;
   z-index: var(--over-content);
   color: red;
   font-size: 1.2rem;
+  transition: 0.35s ease;
+  transition-property: opacity, transform;
+  will-change: transform;
+  span {
+    display: block;
+    &:first-of-type {
+      font-size: 2rem;
+    }
+  }
 `
 
 export const VideoWrap = styled.div`
@@ -43,7 +56,9 @@ export const VideoWrap = styled.div`
   position: relative;
   left: -71%;
   overflow: hidden;
-  transition: transform 0.5s ease;
+  transition: 0.5s ease;
+  transitiom-property: transform;
+  will-cahnge: transform;
   video {
     width: 100%;
     height: 100%;
