@@ -28,13 +28,26 @@ export const LeadText = styled.div`
   bottom: 2rem;
   right: 0;
   color: var(--color-white);
-
+  overflow: hidden;
+  @media (max-width: 520px) {
+    width: 100%;
+    right: unset;
+  }
   h1 {
     font-size: 12rem;
     line-height: 0.9;
     font-weight: ${({ theme }) => theme.font.weight.bold};
+    @media (max-width: 1024px) {
+      font-size: 8rem;
+    }
+    @media (max-width: 520px) {
+      font-size: 5rem;
+    }
   }
   p {
     font-size: 2.4rem;
+    @media (max-width: 520px) {
+      font-size: 1.6rem;
+    }
   }
 `

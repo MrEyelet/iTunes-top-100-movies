@@ -16,6 +16,7 @@ export const Menu = styled.nav`
       a {
         text-decoration: none;
         color: #000;
+        font-size: 1.6rem;
         transition: opacity 0.35s ease-in-out;
         :hover {
           opacity: 0.5;

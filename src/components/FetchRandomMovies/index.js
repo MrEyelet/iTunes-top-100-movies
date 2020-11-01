@@ -6,23 +6,46 @@ export default class FetchRandomMovies extends React.Component {
   state = {
     loading: true,
     movies: [],
-    playlist: []
+    playing: false
   }
 
   async componentDidMount() {
     const url = "https://itunes.apple.com/us/rss/topmovies/limit=100/json"
     const response = await fetch(url)
     const data = await response.json()
-    console.log(data.feed.entry)
+    // console.log(data.feed.entry)
 
     this.setState({ movies: data.feed.entry, loading: false })
+
+    this.video = document.querySelectorAll("video")
+    console.log(this.video)
   }
 
-  playVideo() {
-    this.refs.vidRef.play()
-  }
+  // playOrPause = () => {
+  //   // this.video is the element and can be used inside other methods
+  //   if (this.video.paused) {
+  //     this.video.play()
+  //     this.setState(() => ({ playing: true }))
+  //   } else {
+  //     video.pause()
+  //     this.setState(() => ({ playing: false }))
+  //   }
+  // }
+
+  // playVideo() {
+  //   document.querySelector("video").play()
+  // }
+
+  // pauseVideo() {
+  //   document.querySelector("video").pause()
+  // }
 
   render() {
+    // const ref = el => {
+    //   this.video = el
+    // }
+    // const { playing } = this.state
+
     if (this.state.loading) {
       return <div>loading...</div>
     }
@@ -30,7 +53,6 @@ export default class FetchRandomMovies extends React.Component {
     if (!this.state.movies.length) {
       return <div>didn't get movies</div>
     }
-
     return (
       <MoviesList>
         {this.state.movies.map(item => (
@@ -42,7 +64,7 @@ export default class FetchRandomMovies extends React.Component {
             <MediaWrap>
               <img src={item["im:image"][2].label} alt="" />
               <VideoWrap>
-                <video ref="vidRef" controls>
+                <video controls>
                   <source src={item.link[1].attributes.href} type="video/x-m4v" />
                 </video>
               </VideoWrap>

@@ -5,15 +5,18 @@ import logoImg from "./assets/logo.png"
 
 export const Logo = () => (
   <span className="logo">
-    <img alt="Startup Development House" src={logoImg} />
+    <img src={logoImg} />
   </span>
 )
 
 export const Root = styled.header`
   height: 5rem;
+  padding: 0 2rem;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: var(--over-all);
+  color: var(--color-white);
 `
 
 export const Wrapper = styled.div`

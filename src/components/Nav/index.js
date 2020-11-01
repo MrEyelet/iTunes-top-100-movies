@@ -6,6 +6,8 @@ export const Nav = () => (
     <ul>
       <li>item</li>
       <li>item</li>
+      <li>item</li>
+      <li>item</li>
     </ul>
   </Menu>
 )

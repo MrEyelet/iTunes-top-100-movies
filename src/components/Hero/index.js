@@ -12,7 +12,6 @@ export default class FetchRandomMovies extends React.Component {
     const url = "https://itunes.apple.com/us/rss/topmovies/limit=100/json"
     const response = await fetch(url)
     const data = await response.json()
-    console.log(data.feed.entry[0].link[1].attributes.href)
 
     this.setState({ movies: data.feed.entry, loading: false })
   }
@@ -33,7 +32,7 @@ export default class FetchRandomMovies extends React.Component {
         </video>
         <LeadText>
           <h1>Top 100 movies you can't miss</h1>
-          <p>lead description</p>
+          <p>scroll down to see more</p>
         </LeadText>
       </LeadMovie>
     )
