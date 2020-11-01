@@ -4,6 +4,8 @@ import { Normalize } from "styled-normalize"
 
 import { Header } from "components/Header"
 import { Footer } from "components/Footer"
+import Hero from "components/Hero/index"
+
 import FetchRandomMovies from "components/FetchRandomMovies/index"
 
 import { GlobalStyle, theme } from "./styles"
@@ -13,6 +15,7 @@ export const App = () => (
     <Normalize />
     <GlobalStyle />
     <Header />
+    <Hero />
     <FetchRandomMovies />
     <Footer />
   </ThemeProvider>

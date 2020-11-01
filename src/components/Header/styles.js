@@ -11,6 +11,9 @@ export const Logo = () => (
 
 export const Root = styled.header`
   height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 `
 
 export const Wrapper = styled.div`

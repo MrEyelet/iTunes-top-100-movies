@@ -4,9 +4,9 @@ export const MoviesList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0;
   max-width: ${({ theme }) => theme.size.contentWidth};
   padding: ${({ theme }) => theme.wrapper.space};
+  padding-top: 10rem;
   margin: 0 auto;
 `
 
@@ -27,7 +27,7 @@ export const MoviesListEl = styled.li`
   }
   :hover {
     cursor: pointer;
-    .sc-gzVnrw {
+    > div > div {
       transform: translateX(calc(71% + 8rem));
     }
     h2 {
@@ -90,7 +90,7 @@ export const VideoWrap = styled.div`
     object-fit: cover;
   }
   @media (max-width: 1024px) {
-    display: block;
+    display: none;
   }
 `
 export const MediaWrap = styled.div`
@@ -126,6 +126,9 @@ export const MovieDesc = styled.p`
     border-right: 7px solid transparent;
     border-bottom: 15px solid tomato;
     transition: 0.5s opacity ease-in-out;
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
   @media (max-width: 1024px) {
     min-height: 1rem;
@@ -145,6 +148,7 @@ export const MobilePreview = styled.a`
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: var(--over-all);
   @media (max-width: 1024px) {
     display: block;
   }

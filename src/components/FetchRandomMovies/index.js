@@ -1,22 +1,25 @@
 import React from "react"
+
 import { MoviesList, MoviesListEl, Title, VideoWrap, MediaWrap, MovieDesc, MobilePreview } from "./styles"
 
 export default class FetchRandomMovies extends React.Component {
   state = {
     loading: true,
-    movies: []
+    movies: [],
+    playlist: []
   }
 
   async componentDidMount() {
     const url = "https://itunes.apple.com/us/rss/topmovies/limit=100/json"
     const response = await fetch(url)
     const data = await response.json()
-    // console.log(data.feed.entry.title.label)
-    // console.log(data.feed.entry["summary"])
-    // console.log(data.feed.entry[0].summary.label)
     console.log(data.feed.entry)
 
     this.setState({ movies: data.feed.entry, loading: false })
+  }
+
+  playVideo() {
+    this.refs.vidRef.play()
   }
 
   render() {
@@ -39,7 +42,7 @@ export default class FetchRandomMovies extends React.Component {
             <MediaWrap>
               <img src={item["im:image"][2].label} alt="" />
               <VideoWrap>
-                <video controls name="media">
+                <video ref="vidRef" controls>
                   <source src={item.link[1].attributes.href} type="video/x-m4v" />
                 </video>
               </VideoWrap>

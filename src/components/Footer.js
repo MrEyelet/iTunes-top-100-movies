@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Root = styled.p`
   font-family: TTCommons-bold, sans-serif;
-  font-size: 7rem;
+  font-size: 2rem;
   background-color: ${({ theme }) => theme.color.black};
   color: ${({ theme }) => theme.color.white};
   margin: 0;

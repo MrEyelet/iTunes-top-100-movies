@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     --base-level: 0;
     --over-content: 100;
     --modal: 1000;
+    --over-all: 9999;
 
     --color-white: white;
     --color-black: black;
