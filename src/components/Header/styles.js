@@ -4,9 +4,9 @@ import styled from "styled-components"
 import logoImg from "./assets/logo.png"
 
 export const Logo = () => (
-  <a to="/" className="logo">
+  <span className="logo">
     <img alt="Startup Development House" src={logoImg} />
-  </a>
+  </span>
 )
 
 export const Root = styled.header`

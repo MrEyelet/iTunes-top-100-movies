@@ -10,7 +10,9 @@ export const GlobalStyle = createGlobalStyle`
     --color-black: black;
   }
 
-
+  body {
+    background-color: var(--color-black);
+  }
   @font-face {
     font-family: TTCommons-Light;
     src: url('/fonts/TTCommons-Light.woff2') format('woff2'),
