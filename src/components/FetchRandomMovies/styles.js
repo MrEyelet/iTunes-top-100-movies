@@ -77,8 +77,8 @@ export const VideoWrap = styled.div`
   position: relative;
   left: -71%;
   transition: 0.5s ease-in-out;
-  transitiom-property: transform;
-  will-cahnge: transform;
+  transition-property: transform;
+  will-change: transform;
   video {
     width: 100%;
     height: 100%;
@@ -88,6 +88,9 @@ export const VideoWrap = styled.div`
     bottom: 0;
     right: 0;
     object-fit: cover;
+  }
+  @media (max-width: 1024px) {
+    display: block;
   }
 `
 export const MediaWrap = styled.div`
@@ -131,5 +134,18 @@ export const MovieDesc = styled.p`
     top: unset;
     z-index: var(--over-content);
     color: white;
+  }
+`
+export const MobilePreview = styled.a`
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  @media (max-width: 1024px) {
+    display: block;
   }
 `

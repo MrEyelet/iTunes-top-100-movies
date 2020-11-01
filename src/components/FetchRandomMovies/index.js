@@ -1,5 +1,5 @@
 import React from "react"
-import { MoviesList, MoviesListEl, Title, VideoWrap, MediaWrap, MovieDesc } from "./styles"
+import { MoviesList, MoviesListEl, Title, VideoWrap, MediaWrap, MovieDesc, MobilePreview } from "./styles"
 
 export default class FetchRandomMovies extends React.Component {
   state = {
@@ -45,6 +45,7 @@ export default class FetchRandomMovies extends React.Component {
               </VideoWrap>
             </MediaWrap>
             <MovieDesc>{item.summary.label}</MovieDesc>
+            <MobilePreview href={item.link[1].attributes.href} />
           </MoviesListEl>
         ))}
       </MoviesList>
