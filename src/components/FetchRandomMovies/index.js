@@ -14,6 +14,11 @@ export default class FetchRandomMovies extends React.Component {
     const data = await response.json()
 
     this.setState({ movies: data.feed.entry, loading: false })
+    console.log(data.feed.entry)
+    if (data.feed.entry) {
+      // console.log(data.feed.entry.summary.label)
+      console.log(data.feed.entry[0].summary.label)
+    }
   }
 
   mouseEnter = e => {
@@ -52,7 +57,7 @@ export default class FetchRandomMovies extends React.Component {
                 </video>
               </VideoWrap>
             </MediaWrap>
-            <MovieDesc>{item.summary.label}</MovieDesc>
+            {item.summary ? <MovieDesc>{item.summary.label}</MovieDesc> : null}
             <MobilePreview href={item.link[1].attributes.href} />
           </MoviesListEl>
         ))}
