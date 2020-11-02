@@ -9,5 +9,9 @@ export const Nav = () => (
       <li>item</li>
       <li>item</li>
     </ul>
+    <ul>
+      <li>log in</li>
+      <li>sign in</li>
+    </ul>
   </Menu>
 )

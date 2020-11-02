@@ -4,10 +4,10 @@ import styled from "styled-components"
 const Root = styled.p`
   font-family: TTCommons-bold, sans-serif;
   font-size: 2rem;
-  background-color: ${({ theme }) => theme.color.black};
+  border-top: 1px solid ${({ theme }) => theme.color.white};
   color: ${({ theme }) => theme.color.white};
   margin: 0;
-  padding: 12rem 0 10rem;
+  padding: 2rem;
   text-align: center;
 `
 

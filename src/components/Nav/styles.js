@@ -1,8 +1,9 @@
 import styled from "styled-components"
 
 export const Menu = styled.nav`
-  min-width: 10rem;
-  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   ul {
     display: flex;
     justify-content: space-around;
@@ -14,9 +15,7 @@ export const Menu = styled.nav`
       list-style-type: none;
       font-weight: bold;
       font-size: 1.6rem;
-      :nth-of-type(n + 2) {
-        margin-left: 2rem;
-      }
+      margin-left: 2rem;
       a {
         text-decoration: none;
         color: #000;

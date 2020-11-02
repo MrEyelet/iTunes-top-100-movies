@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 
-import logoImg from "./assets/logo.png"
+import logoImg from "./assets/logo.svg"
 
 export const Logo = () => (
-  <span className="logo">
-    <img src={logoImg} />
-  </span>
+  <div className="logo">
+    <img src={logoImg} alt="logo" />
+  </div>
 )
 
 export const Root = styled.header`
@@ -15,18 +15,23 @@ export const Root = styled.header`
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   z-index: var(--over-all);
   color: var(--color-white);
 `
 
 export const Wrapper = styled.div`
   height: 100%;
-  max-width: ${({ theme }) => theme.size.contentWidth};
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   .logo {
+    width: 4rem;
     display: flex;
     align-items: center;
+    img {
+      width: 100%;
+    }
   }
 `
