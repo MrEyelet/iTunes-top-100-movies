@@ -26,7 +26,6 @@ export const MoviesListEl = styled.li`
     width: 100%;
   }
   :hover {
-    cursor: pointer;
     > div > div {
       transform: translateX(calc(71% + 8rem));
     }
