@@ -9,7 +9,7 @@ const Root = styled.footer`
     padding: 2rem;
   }
   p {
-    padding-top: 2rem;
+    padding: 2rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: ${({ theme }) => theme.color.white};
     text-align: center;
