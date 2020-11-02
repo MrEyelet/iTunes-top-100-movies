@@ -23,6 +23,7 @@ export default class FetchRandomMovies extends React.Component {
   }
   mouseLeave = e => {
     e.currentTarget.pause()
+    e.currentTarget.currentTime = 0
     this.setState({ isPlaying: true })
     // console.log(e)
   }
