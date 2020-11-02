@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const Root = styled.div`
+const Root = styled.footer`
   font-family: TTCommons-bold, sans-serif;
   font-size: 1.2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
