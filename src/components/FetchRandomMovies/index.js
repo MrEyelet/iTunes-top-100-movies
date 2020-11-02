@@ -42,26 +42,28 @@ export default class FetchRandomMovies extends React.Component {
       return <div>didn't get movies</div>
     }
     return (
-      <MoviesList id="top100">
-        {this.state.movies.map(item => (
-          <MoviesListEl key={item.title.label}>
-            <Title>
-              <span>{item.title.label}</span>
-              <span>{item.category.attributes.term}</span>
-            </Title>
-            <MediaWrap>
-              <img src={item["im:image"][2].label} alt={item.title.label} />
-              <VideoWrap>
-                <video onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave} controls>
-                  <source src={item.link[1].attributes.href} type="video/x-m4v" />
-                </video>
-              </VideoWrap>
-            </MediaWrap>
-            {item.summary ? <MovieDesc>{item.summary.label}</MovieDesc> : null}
-            <MobilePreview href={item.link[1].attributes.href} />
-          </MoviesListEl>
-        ))}
-      </MoviesList>
+      <section>
+        <MoviesList id="top100">
+          {this.state.movies.map(item => (
+            <MoviesListEl key={item.title.label}>
+              <Title>
+                <span>{item.title.label}</span>
+                <span>{item.category.attributes.term}</span>
+              </Title>
+              <MediaWrap>
+                <img src={item["im:image"][2].label} alt={item.title.label} />
+                <VideoWrap>
+                  <video onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave} controls>
+                    <source src={item.link[1].attributes.href} type="video/x-m4v" />
+                  </video>
+                </VideoWrap>
+              </MediaWrap>
+              {item.summary ? <MovieDesc>{item.summary.label}</MovieDesc> : null}
+              <MobilePreview href={item.link[1].attributes.href} />
+            </MoviesListEl>
+          ))}
+        </MoviesList>
+      </section>
     )
   }
 }

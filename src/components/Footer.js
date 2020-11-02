@@ -5,8 +5,6 @@ const Root = styled.footer`
   font-family: TTCommons-bold, sans-serif;
   font-size: 1.2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin: 0;
-  padding: 2rem 0;
   @media (max-width: 520px) {
     padding: 2rem;
   }
@@ -19,8 +17,11 @@ const Root = styled.footer`
 `
 const Lists = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 6rem;
+  justify-content: space-between;
+  max-width: ${({ theme }) => theme.size.contentWidth};
+  padding: ${({ theme }) => theme.wrapper.space};
+
+  margin: 6rem auto;
   @media (max-width: 1024px) {
     margin-bottom: 0;
   }
