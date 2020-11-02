@@ -22,7 +22,7 @@ export const Nav = () => (
     </ul>
     <ul>
       <li>
-        <a href="#">login in</a>
+        <a href="#">log in</a>
       </li>
       <li>
         <a href="#">sign in</a>

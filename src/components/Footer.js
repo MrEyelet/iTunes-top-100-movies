@@ -4,10 +4,15 @@ import styled from "styled-components"
 const Root = styled.div`
   font-family: TTCommons-bold, sans-serif;
   font-size: 1.2rem;
-  border-top: 1px solid ${({ theme }) => theme.color.white};
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin: 0;
-  padding: 2rem;
+  padding: 2rem 0;
+  @media (max-width: 520px) {
+    padding: 2rem;
+  }
   p {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: ${({ theme }) => theme.color.white};
     text-align: center;
   }
@@ -15,6 +20,10 @@ const Root = styled.div`
 const Lists = styled.div`
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 6rem;
+  @media (max-width: 1024px) {
+    margin-bottom: 0;
+  }
   @media (max-width: 520px) {
     flex-direction: column;
   }
@@ -24,7 +33,7 @@ const SingleList = styled.ul`
 
   li {
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     list-style-type: none;
     text-align: left;
     @media (max-width: 1024px) {
@@ -47,7 +56,6 @@ const SingleList = styled.ul`
 
 export const Footer = () => (
   <Root>
-    <p>&copy; 2020 Pandemia still spreads out ;(</p>
     <Lists>
       <SingleList>
         <li>
@@ -94,5 +102,6 @@ export const Footer = () => (
         </li>
       </SingleList>
     </Lists>
+    <p>&copy; 2020 Pandemia still spreads out ;(</p>
   </Root>
 )
