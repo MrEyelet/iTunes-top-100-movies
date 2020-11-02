@@ -4,14 +4,29 @@ import { Menu } from "./styles"
 export const Nav = () => (
   <Menu>
     <ul>
-      <li>item</li>
-      <li>item</li>
-      <li>item</li>
-      <li>item</li>
+      <li>
+        <a href="#">item</a>
+      </li>
+      <li>
+        <a href="#">item</a>
+      </li>
+      <li>
+        <a href="#">item</a>
+      </li>
+      <li>
+        <a href="#">item</a>
+      </li>
+      <li>
+        <a href="#">item</a>
+      </li>
     </ul>
     <ul>
-      <li>log in</li>
-      <li>sign in</li>
+      <li>
+        <a href="#">login in</a>
+      </li>
+      <li>
+        <a href="#">sign in</a>
+      </li>
     </ul>
   </Menu>
 )

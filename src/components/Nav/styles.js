@@ -18,7 +18,7 @@ export const Menu = styled.nav`
       margin-left: 2rem;
       a {
         text-decoration: none;
-        color: #000;
+        color: ${({ theme }) => theme.color.white};
         font-size: 1.6rem;
         transition: opacity 0.35s ease-in-out;
         :hover {
