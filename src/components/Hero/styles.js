@@ -4,6 +4,7 @@ export const LeadMovie = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
+  overflow: hidden;
   video {
     width: 100%;
     height: 100%;

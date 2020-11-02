@@ -15,13 +15,24 @@ const Root = styled.div`
 const Lists = styled.div`
   display: flex;
   justify-content: space-evenly;
+  @media (max-width: 520px) {
+    flex-direction: column;
+  }
 `
 const SingleList = styled.ul`
+  padding-left: 0;
+
   li {
     margin-bottom: 1rem;
     font-size: 2rem;
     list-style-type: none;
     text-align: left;
+    @media (max-width: 1024px) {
+      font-size: 1.4rem;
+    }
+    @media (max-width: 520px) {
+      font-size: 1.2rem;
+    }
   }
   a {
     color: ${({ theme }) => theme.color.white};

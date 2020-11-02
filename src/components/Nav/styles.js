@@ -14,8 +14,10 @@ export const Menu = styled.nav`
     li {
       list-style-type: none;
       font-weight: bold;
-      font-size: 1.6rem;
       margin-left: 2rem;
+      @media (max-width: 520px) {
+        margin-left: 1rem;
+      }
       a {
         text-decoration: none;
         color: ${({ theme }) => theme.color.white};
@@ -23,6 +25,12 @@ export const Menu = styled.nav`
         transition: opacity 0.35s ease-in-out;
         :hover {
           opacity: 0.5;
+        }
+        @media (max-width: 1024px) {
+          font-size: 1.4rem;
+        }
+        @media (max-width: 520px) {
+          font-size: 1.2rem;
         }
       }
     }
