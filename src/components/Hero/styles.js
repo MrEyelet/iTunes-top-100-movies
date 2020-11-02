@@ -44,8 +44,15 @@ export const LeadText = styled.div`
       font-size: 5rem;
     }
   }
-  p {
-    font-size: 2.4rem;
+  a {
+    display: block;
+    width: 15rem;
+    padding: 1rem 2rem;
+    border: 2px solid #70ff5f;
+    font-size: 2rem;
+    color: #70ff5f;
+    text-decoration: none;
+    text-align: center;
     @media (max-width: 520px) {
       font-size: 1.6rem;
     }

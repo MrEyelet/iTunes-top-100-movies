@@ -13,6 +13,10 @@ export const Menu = styled.nav`
     li {
       list-style-type: none;
       font-weight: bold;
+      font-size: 1.6rem;
+      :nth-of-type(n + 2) {
+        margin-left: 2rem;
+      }
       a {
         text-decoration: none;
         color: #000;

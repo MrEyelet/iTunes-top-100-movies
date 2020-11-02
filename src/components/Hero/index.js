@@ -32,7 +32,7 @@ export default class FetchRandomMovies extends React.Component {
         </video>
         <LeadText>
           <h1>Top 100 movies you can't miss</h1>
-          <p>scroll down to see more</p>
+          <a href="#top100">see them all</a>
         </LeadText>
       </LeadMovie>
     )

@@ -36,7 +36,7 @@ export const MoviesListEl = styled.li`
     }
     p {
       color: white;
-      border-color: tomato;
+      border-color: #70ff5f;
       z-index: 1000;
       ::before {
         opacity: 1;
@@ -57,7 +57,7 @@ export const Title = styled.h2`
   position: absolute;
   left: 13rem;
   z-index: var(--over-content);
-  color: tomato;
+  color: #70ff5f;
   font-size: 1.2rem;
   transition: 0.35s ease-in-out;
   transition-property: opacity, transform;
@@ -117,14 +117,14 @@ export const MovieDesc = styled.p`
     content: "";
     height: 0;
     position: absolute;
-    top: -15px;
-    left: 13%;
+    top: -9px;
+    left: 15%;
     opacity: 0;
     width: 0;
     height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 15px solid tomato;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #70ff5f;
     transition: 0.5s opacity ease-in-out;
     @media (max-width: 1024px) {
       display: none;

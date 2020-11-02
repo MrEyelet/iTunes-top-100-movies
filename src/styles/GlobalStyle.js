@@ -10,7 +10,9 @@ export const GlobalStyle = createGlobalStyle`
     --color-white: white;
     --color-black: black;
   }
-
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: var(--color-black);
   }

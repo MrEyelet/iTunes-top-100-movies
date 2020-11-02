@@ -5,47 +5,32 @@ import { MoviesList, MoviesListEl, Title, VideoWrap, MediaWrap, MovieDesc, Mobil
 export default class FetchRandomMovies extends React.Component {
   state = {
     loading: true,
-    movies: [],
-    playing: false
+    movies: []
   }
 
   async componentDidMount() {
     const url = "https://itunes.apple.com/us/rss/topmovies/limit=100/json"
     const response = await fetch(url)
     const data = await response.json()
-    // console.log(data.feed.entry)
 
     this.setState({ movies: data.feed.entry, loading: false })
-
-    this.video = document.querySelectorAll("video")
-    console.log(this.video)
   }
 
-  // playOrPause = () => {
-  //   // this.video is the element and can be used inside other methods
-  //   if (this.video.paused) {
-  //     this.video.play()
-  //     this.setState(() => ({ playing: true }))
-  //   } else {
-  //     video.pause()
-  //     this.setState(() => ({ playing: false }))
-  //   }
-  // }
-
-  // playVideo() {
-  //   document.querySelector("video").play()
-  // }
-
-  // pauseVideo() {
-  //   document.querySelector("video").pause()
-  // }
+  getInitialState(e) {
+    return {
+      isPlaying: false
+    }
+  }
+  mouseEnter = e => {
+    this.setState({ isPlaying: true })
+    console.log(e)
+    // console.log(e.currentTarget)
+  }
+  mouseLeave = e => {
+    this.setState({ isPaused: false })
+  }
 
   render() {
-    // const ref = el => {
-    //   this.video = el
-    // }
-    // const { playing } = this.state
-
     if (this.state.loading) {
       return <div>loading...</div>
     }
@@ -54,7 +39,7 @@ export default class FetchRandomMovies extends React.Component {
       return <div>didn't get movies</div>
     }
     return (
-      <MoviesList>
+      <MoviesList id="top100">
         {this.state.movies.map(item => (
           <MoviesListEl key={item.title.label}>
             <Title>
@@ -64,7 +49,7 @@ export default class FetchRandomMovies extends React.Component {
             <MediaWrap>
               <img src={item["im:image"][2].label} alt="" />
               <VideoWrap>
-                <video controls>
+                <video onMouseEnter={e => this.mouseEnter(e.currentTarget)} controls>
                   <source src={item.link[1].attributes.href} type="video/x-m4v" />
                 </video>
               </VideoWrap>
