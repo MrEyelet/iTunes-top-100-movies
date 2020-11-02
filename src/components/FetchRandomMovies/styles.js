@@ -62,6 +62,7 @@ export const Title = styled.h2`
   transition: 0.35s ease-in-out;
   transition-property: opacity, transform;
   will-change: transform;
+  pointer-events: none;
   span {
     display: block;
     &:first-of-type {

@@ -16,18 +16,15 @@ export default class FetchRandomMovies extends React.Component {
     this.setState({ movies: data.feed.entry, loading: false })
   }
 
-  getInitialState(e) {
-    return {
-      isPlaying: false
-    }
-  }
   mouseEnter = e => {
+    e.currentTarget.play()
     this.setState({ isPlaying: true })
-    console.log(e)
-    // console.log(e.currentTarget)
+    // console.log(e)
   }
   mouseLeave = e => {
-    this.setState({ isPaused: false })
+    e.currentTarget.pause()
+    this.setState({ isPlaying: true })
+    // console.log(e)
   }
 
   render() {
@@ -49,7 +46,7 @@ export default class FetchRandomMovies extends React.Component {
             <MediaWrap>
               <img src={item["im:image"][2].label} alt="" />
               <VideoWrap>
-                <video onMouseEnter={e => this.mouseEnter(e.currentTarget)} controls>
+                <video onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave} controls>
                   <source src={item.link[1].attributes.href} type="video/x-m4v" />
                 </video>
               </VideoWrap>

@@ -25,7 +25,7 @@ export const LeadText = styled.div`
   width: 50%;
   padding: 0 2rem;
   position: absolute;
-  bottom: 2rem;
+  bottom: 10rem;
   right: 0;
   color: var(--color-white);
   overflow: hidden;
