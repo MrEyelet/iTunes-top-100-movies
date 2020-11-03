@@ -22,13 +22,13 @@ export default class FetchRandomMovies extends React.Component {
   }
 
   mouseEnter = e => {
-    e.currentTarget.play()
+    e.currentTarget.querySelector("video").play()
     this.setState({ isPlaying: true })
     // console.log(e)
   }
   mouseLeave = e => {
-    e.currentTarget.pause()
-    e.currentTarget.load()
+    e.currentTarget.querySelector("video").pause()
+    e.currentTarget.querySelector("video").load()
     this.setState({ isPlaying: true })
     // console.log(e)
   }
@@ -45,7 +45,7 @@ export default class FetchRandomMovies extends React.Component {
       <section>
         <MoviesList id="top100">
           {this.state.movies.map(item => (
-            <MoviesListEl key={item.title.label}>
+            <MoviesListEl key={item.title.label} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
               <Title>
                 <span>{item.title.label}</span>
                 <span>{item.category.attributes.term}</span>
@@ -53,7 +53,7 @@ export default class FetchRandomMovies extends React.Component {
               <MediaWrap>
                 <img src={item["im:image"][2].label} alt={item.title.label} />
                 <VideoWrap>
-                  <video onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave} controls>
+                  <video controls>
                     <source src={item.link[1].attributes.href} type="video/x-m4v" />
                   </video>
                 </VideoWrap>
