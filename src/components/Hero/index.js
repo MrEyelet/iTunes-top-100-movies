@@ -1,6 +1,6 @@
 import React from "react"
 
-import { LeadMovie, LeadText } from "./styles"
+import { LeadMovie, LeadText, Preloader } from "./styles"
 
 export default class FetchRandomMovies extends React.Component {
   state = {
@@ -18,7 +18,11 @@ export default class FetchRandomMovies extends React.Component {
 
   render() {
     if (this.state.loading) {
-      return <div>loading...</div>
+      return (
+        <Preloader>
+          <p>loading...</p>
+        </Preloader>
+      )
     }
 
     if (!this.state.movies) {

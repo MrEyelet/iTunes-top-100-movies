@@ -1,4 +1,23 @@
 import styled from "styled-components"
+export const Preloader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  z-index: var(--over-all);
+  p {
+    font-size: 8rem;
+    color: var(--color-white);
+    @media (max-width: 520px) {
+      font-size: 3rem;
+    }
+  }
+`
 
 export const LeadMovie = styled.div`
   width: 100%;
