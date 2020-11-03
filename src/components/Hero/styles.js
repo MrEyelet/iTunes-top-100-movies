@@ -31,8 +31,10 @@ export const LeadText = styled.div`
   color: var(--color-white);
   overflow: hidden;
   @media (max-width: 520px) {
-    width: 100%;
+    width: 90%;
     right: unset;
+    left: 50%;
+    transform: translateX(-50%);
   }
   h1 {
     font-size: 12rem;
@@ -42,7 +44,7 @@ export const LeadText = styled.div`
       font-size: 8rem;
     }
     @media (max-width: 520px) {
-      font-size: 3rem;
+      font-size: 5rem;
     }
   }
   a {
