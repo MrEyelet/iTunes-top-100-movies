@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/iTunes-top-100-movies/static/js/main.20516ce0.chunk.js",
+    "main.js.map": "/iTunes-top-100-movies/static/js/main.20516ce0.chunk.js.map",
+    "runtime-main.js": "/iTunes-top-100-movies/static/js/runtime-main.4bb605aa.js",
+    "runtime-main.js.map": "/iTunes-top-100-movies/static/js/runtime-main.4bb605aa.js.map",
+    "static/js/2.63f2522d.chunk.js": "/iTunes-top-100-movies/static/js/2.63f2522d.chunk.js",
+    "static/js/2.63f2522d.chunk.js.map": "/iTunes-top-100-movies/static/js/2.63f2522d.chunk.js.map",
+    "index.html": "/iTunes-top-100-movies/index.html",
+    "precache-manifest.c2deedb281f39055350668b4ae3d4058.js": "/iTunes-top-100-movies/precache-manifest.c2deedb281f39055350668b4ae3d4058.js",
+    "service-worker.js": "/iTunes-top-100-movies/service-worker.js",
+    "static/media/logo.svg": "/iTunes-top-100-movies/static/media/logo.f2fa4b6a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4bb605aa.js",
+    "static/js/2.63f2522d.chunk.js",
+    "static/js/main.20516ce0.chunk.js"
+  ]
+}
