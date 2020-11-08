@@ -45,10 +45,12 @@ export const LeadText = styled.div`
   width: 50%;
   padding: 0 2rem;
   position: absolute;
-  bottom: 10rem;
-  right: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: var(--color-white);
   overflow: hidden;
+  text-align: center;
   @media (max-width: 520px) {
     width: 90%;
     right: unset;
@@ -56,7 +58,7 @@ export const LeadText = styled.div`
     transform: translateX(-50%);
   }
   h1 {
-    font-size: 12rem;
+    font-size: 10rem;
     line-height: 0.9;
     font-weight: ${({ theme }) => theme.font.weight.bold};
     @media (max-width: 1024px) {
@@ -70,6 +72,7 @@ export const LeadText = styled.div`
     display: block;
     width: 15rem;
     padding: 1rem 2rem;
+    margin: 4rem auto 0;
     border: 2px solid #70ff5f;
     font-size: 2rem;
     color: #70ff5f;
