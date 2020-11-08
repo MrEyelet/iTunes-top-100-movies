@@ -50,7 +50,7 @@ export const LeadText = styled.div`
   color: var(--color-white);
   overflow: hidden;
   text-align: center;
-  @media (max-width: 520px) {
+  @media (max-width: 1024px) {
     width: 90%;
   }
   h1 {
