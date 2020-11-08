@@ -29,7 +29,7 @@ export default class FetchRandomMovies extends React.Component {
   mouseLeave = e => {
     e.currentTarget.querySelector("video").pause()
     e.currentTarget.querySelector("video").load()
-    this.setState({ isPlaying: true })
+    this.setState({ isPlaying: false })
     // console.log(e)
   }
 

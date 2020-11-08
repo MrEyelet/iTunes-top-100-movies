@@ -52,9 +52,6 @@ export const LeadText = styled.div`
   text-align: center;
   @media (max-width: 520px) {
     width: 90%;
-    right: unset;
-    left: 50%;
-    transform: translateX(-50%);
   }
   h1 {
     margin-bottom: 0;

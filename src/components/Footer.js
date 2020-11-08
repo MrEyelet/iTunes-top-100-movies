@@ -14,45 +14,45 @@ const Root = styled.footer`
     text-align: center;
   }
 `
-const Lists = styled.div`
-  display: flex;
-  justify-content: space-between;
-  max-width: ${({ theme }) => theme.size.contentWidth};
-  padding: ${({ theme }) => theme.wrapper.space};
+// const Lists = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   max-width: ${({ theme }) => theme.size.contentWidth};
+//   padding: ${({ theme }) => theme.wrapper.space};
 
-  margin: 6rem auto;
-  @media (max-width: 1024px) {
-    margin-bottom: 0;
-  }
-  @media (max-width: 520px) {
-    flex-direction: column;
-  }
-`
-const SingleList = styled.ul`
-  padding-left: 0;
+//   margin: 6rem auto;
+//   @media (max-width: 1024px) {
+//     margin-bottom: 0;
+//   }
+//   @media (max-width: 520px) {
+//     flex-direction: column;
+//   }
+// `
+// const SingleList = styled.ul`
+//   padding-left: 0;
 
-  li {
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-    list-style-type: none;
-    text-align: left;
-    @media (max-width: 1024px) {
-      font-size: 1.4rem;
-    }
-    @media (max-width: 520px) {
-      font-size: 1.2rem;
-    }
-  }
-  a {
-    color: ${({ theme }) => theme.color.white};
-    text-decoration: none;
-    opacity: 0.5;
-    transition: opacity 0.5s ease-in-out
-    :hover {
-      opacity: 1;
-    }
-  }
-`
+//   li {
+//     margin-bottom: 1rem;
+//     font-size: 1.6rem;
+//     list-style-type: none;
+//     text-align: left;
+//     @media (max-width: 1024px) {
+//       font-size: 1.4rem;
+//     }
+//     @media (max-width: 520px) {
+//       font-size: 1.2rem;
+//     }
+//   }
+//   a {
+//     color: ${({ theme }) => theme.color.white};
+//     text-decoration: none;
+//     opacity: 0.5;
+//     transition: opacity 0.5s ease-in-out
+//     :hover {
+//       opacity: 1;
+//     }
+//   }
+// `
 
 export const Footer = () => (
   <Root>
