@@ -13,12 +13,15 @@ export const MoviesList = styled.ul`
 export const MoviesListEl = styled.li`
   display: flex;
   flex-direction: column;
-  width: calc(33.33% - 1rem);
+  width: calc(25% - 1rem);
   position: relative;
   margin-top: 1rem;
   list-style-type: none;
   background-color: var(--color-black);
   transition: 0.5s opacity ease-in-out;
+  @media (max-width: 1366px) {
+    width: calc(33.33% - 1rem);
+  }
   @media (max-width: 1024px) {
     width: calc(50% - 1rem);
   }
@@ -106,7 +109,8 @@ export const MovieDesc = styled.p`
   padding: 2rem;
   margin-top: 0;
   z-index: -1;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
   border-top: 1px solid transparent;
   background-color: var(--color-black);
   color: var(--color-white);

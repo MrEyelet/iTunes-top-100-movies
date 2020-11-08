@@ -39,6 +39,7 @@ export const LeadText = styled.div`
     font-size: 10rem;
     line-height: 0.9;
     font-weight: ${({ theme }) => theme.font.weight.bold};
+    font-style: italic;
     @media (max-width: 1024px) {
       font-size: 8rem;
     }
@@ -58,13 +59,13 @@ export const LeadText = styled.div`
     padding: 1rem 2rem;
     margin: 4rem auto 0;
     border: 2px solid #70ff5f;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #70ff5f;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
     @media (max-width: 520px) {
-      font-size: 1.6rem;
+      font-size: 1.3rem;
     }
   }
 `

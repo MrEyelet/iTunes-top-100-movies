@@ -26,7 +26,7 @@ export const theme = {
     }
   },
   size: {
-    contentWidth: "120rem"
+    contentWidth: "144rem"
   },
   wrapper: {
     space: "0 2rem"

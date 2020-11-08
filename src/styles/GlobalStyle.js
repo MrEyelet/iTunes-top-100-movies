@@ -10,35 +10,22 @@ export const GlobalStyle = createGlobalStyle`
     --color-white: white;
     --color-black: black;
   }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+  
   html {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
     scroll-behavior: smooth;
   }
+  
   body {
     background-color: var(--color-black);
   }
-  @font-face {
-    font-family: TTCommons-Light;
-    src: url('../fonts/TTCommons-Light.woff2') format('woff2'),
-         url('../fonts/TTCommons-Light.ttf') format('truetype');
-    font-display: swap;
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Playfair Display', serif;
   }
 
-  @font-face {
-    font-family: TTCommons-Regular;
-    src: url('../fonts/TTCommons-Regular.woff2') format('woff2'),
-         url('../fonts/TTCommons-Regular.ttf') format('truetype');
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: TTCommons-DemiBold;
-    src: url('../fonts/TTCommons-DemiBold.woff2') format('woff2')
-         url('../fonts/TTCommons-DemiBold.ttf') format('truetype');
-    font-display: swap;
-  }
-
-  html {
-    font-family: TTCommons-regular,sans-serif;
-    font-size: 10px;
-  }
+ 
 `
