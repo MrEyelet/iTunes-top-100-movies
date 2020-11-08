@@ -10,7 +10,6 @@ const Root = styled.footer`
   }
   p {
     padding: 2rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: ${({ theme }) => theme.color.white};
     text-align: center;
   }
@@ -57,7 +56,7 @@ const SingleList = styled.ul`
 
 export const Footer = () => (
   <Root>
-    <Lists>
+    {/* <Lists>
       <SingleList>
         <li>
           <a href="#">Sound and subtitles</a>
@@ -102,7 +101,7 @@ export const Footer = () => (
           <a href="#">Cookies settings</a>
         </li>
       </SingleList>
-    </Lists>
+    </Lists> */}
     <p>&copy; 2020 Pandemia still spreads out ;(</p>
   </Root>
 )

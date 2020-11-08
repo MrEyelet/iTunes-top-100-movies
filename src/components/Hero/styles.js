@@ -1,32 +1,31 @@
 import styled from "styled-components"
-export const Preloader = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: var(--color-black);
-  z-index: var(--over-all);
-  p {
-    font-size: 8rem;
-    color: var(--color-white);
-    @media (max-width: 520px) {
-      font-size: 3rem;
-    }
-  }
-`
 
-export const LeadMovie = styled.div`
-  width: 100%;
-  height: 100vh;
+// export const Preloader = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   height: 100vh;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background-color: var(--color-black);
+//   z-index: var(--over-all);
+//   p {
+//     font-size: 8rem;
+//     color: var(--color-white);
+//     @media (max-width: 520px) {
+//       font-size: 3rem;
+//     }
+//   }
+// `
+
+export const Banner = styled.div`
   position: relative;
   overflow: hidden;
-  video {
+  img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
   }
   ::before {
@@ -38,7 +37,7 @@ export const LeadMovie = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 `
 export const LeadText = styled.div`
@@ -58,6 +57,7 @@ export const LeadText = styled.div`
     transform: translateX(-50%);
   }
   h1 {
+    margin-bottom: 0;
     font-size: 10rem;
     line-height: 0.9;
     font-weight: ${({ theme }) => theme.font.weight.bold};
@@ -66,6 +66,12 @@ export const LeadText = styled.div`
     }
     @media (max-width: 520px) {
       font-size: 5rem;
+    }
+  }
+  p {
+    font-size: 2rem;
+    @media (max-width: 520px) {
+      font-size: 1.6rem;
     }
   }
   a {
@@ -78,6 +84,7 @@ export const LeadText = styled.div`
     color: #70ff5f;
     text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
     @media (max-width: 520px) {
       font-size: 1.6rem;
     }

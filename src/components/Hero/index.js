@@ -1,44 +1,19 @@
 import React from "react"
 
-import { LeadMovie, LeadText, Preloader } from "./styles"
+import { Banner, LeadText } from "./styles"
+import banner from "./assets/movies-bg.jpg"
 
 export default class FetchRandomMovies extends React.Component {
-  state = {
-    loading: true,
-    movies: []
-  }
-
-  async componentDidMount() {
-    const url = "https://itunes.apple.com/us/rss/topmovies/limit=100/json"
-    const response = await fetch(url)
-    const data = await response.json()
-
-    this.setState({ movies: data.feed.entry, loading: false })
-  }
-
   render() {
-    if (this.state.loading) {
-      return (
-        <Preloader>
-          <p>loading...</p>
-        </Preloader>
-      )
-    }
-
-    if (!this.state.movies) {
-      return <div>didn't get a movie</div>
-    }
-
     return (
-      <LeadMovie>
-        <video autoPlay muted loop>
-          <source src={this.state.movies[0].link[1].attributes.href} />
-        </video>
+      <Banner>
+        <img src={banner} alt="" />
         <LeadText>
           <h1>Top 100 movies you can't miss</h1>
+          <p>Top hundred movies fetched from iTunes API</p>
           <a href="#top100">see them all</a>
         </LeadText>
-      </LeadMovie>
+      </Banner>
     )
   }
 }

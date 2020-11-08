@@ -14,7 +14,7 @@ export const App = () => (
   <ThemeProvider theme={theme}>
     <Normalize />
     <GlobalStyle />
-    <Header />
+    {/* <Header /> */}
     <Hero />
     <FetchRandomMovies />
     <Footer />
