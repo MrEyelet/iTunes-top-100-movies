@@ -1,25 +1,5 @@
 import styled from "styled-components"
 
-// export const Preloader = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   height: 100vh;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   background-color: var(--color-black);
-//   z-index: var(--over-all);
-//   p {
-//     font-size: 8rem;
-//     color: var(--color-white);
-//     @media (max-width: 520px) {
-//       font-size: 3rem;
-//     }
-//   }
-// `
-
 export const Banner = styled.div`
   position: relative;
   overflow: hidden;
@@ -54,6 +34,7 @@ export const LeadText = styled.div`
     width: 90%;
   }
   h1 {
+    margin-top: 0;
     margin-bottom: 0;
     font-size: 10rem;
     line-height: 0.9;
