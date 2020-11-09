@@ -31,10 +31,13 @@ export const MoviesListEl = styled.li`
   :hover {
     > div > div {
       transform: translateX(calc(71% + 8rem));
+      transition: transform 1.2s cubic-bezier(0.07, 0.4, 0.36, 1) 0.15s, opacity 1.7s ease-in-out;
+      opacity: 1;
     }
     h2 {
       opacity: 0;
       transform: translateX(-2rem);
+      transition-delay: 0ms;
     }
     p {
       opacity: 1;
@@ -60,7 +63,7 @@ export const Title = styled.h2`
   z-index: var(--over-content);
   color: #70ff5f;
   font-size: 1.2rem;
-  transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out 0.45s;
   transition-property: opacity, transform;
   will-change: transform;
   pointer-events: none;
@@ -78,8 +81,8 @@ export const VideoWrap = styled.div`
   height: 17rem;
   position: relative;
   left: -71%;
-  transition: 0.5s ease-in-out;
-  transition-property: transform;
+  opacity: 0;
+  transition: transform 1.2s cubic-bezier(0.07, 0.4, 0.36, 1) 0.15s, opacity 0.75s ease-in-out;
   will-change: transform;
   video {
     width: 100%;
