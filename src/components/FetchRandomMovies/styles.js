@@ -37,9 +37,8 @@ export const MoviesListEl = styled.li`
       transform: translateX(-2rem);
     }
     p {
-      color: white;
-      border-color: #70ff5f;
-      z-index: 1000;
+      opacity: 1;
+      pointer-events: all;
       ::before {
         opacity: 1;
       }
@@ -108,15 +107,15 @@ export const MovieDesc = styled.p`
   top: 100%;
   padding: 2rem;
   margin-top: 0;
-  z-index: -1;
+  z-index: 1000;
   font-size: 1.4rem;
   line-height: 1.5;
   border-top: 1px solid transparent;
   background-color: var(--color-black);
   color: var(--color-white);
-  color: black;
-  transition: 0.5s ease-in-out;
-  transition-property: transform, color, background-color, border-color;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
   ::before {
     content: "";
     height: 0;
