@@ -138,8 +138,7 @@ export const MovieDesc = styled.p`
     padding-left: 0;
     position: relative;
     top: unset;
-    z-index: var(--over-content);
-    color: white;
+    opacity: 1;
   }
 `
 export const MobilePreview = styled.a`
