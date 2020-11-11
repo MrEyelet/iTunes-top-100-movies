@@ -1,4 +1,6 @@
 import React from "react"
+import sal from "sal.js"
+import "sal.js/dist/sal.css"
 
 import { MoviesList, MoviesListEl, Title, VideoWrap, MediaWrap, MovieDesc, MobilePreview } from "./styles"
 
@@ -19,6 +21,7 @@ export default class FetchRandomMovies extends React.Component {
     //   console.log(data.feed.entry.summary.label)
     //   console.log(data.feed.entry[0].summary.label)
     // }
+    sal()
   }
 
   mouseEnter = e => {
@@ -45,7 +48,7 @@ export default class FetchRandomMovies extends React.Component {
       <section>
         <MoviesList id="top100">
           {this.state.movies.map(item => (
-            <MoviesListEl key={item.title.label} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
+            <MoviesListEl data-sal="fade" key={item.title.label} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
               <Title>
                 <span>{item.title.label}</span>
                 <span>{item.category.attributes.term}</span>
