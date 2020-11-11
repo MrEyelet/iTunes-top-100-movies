@@ -2,7 +2,7 @@ import React from "react"
 import { ThemeProvider } from "styled-components"
 import { Normalize } from "styled-normalize"
 
-import { Footer } from "components/Footer"
+import { Footer } from "components/Footer/index"
 import Hero from "components/Hero/index"
 
 import FetchRandomMovies from "components/FetchRandomMovies/index"

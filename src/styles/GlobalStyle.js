@@ -9,6 +9,8 @@ export const GlobalStyle = createGlobalStyle`
 
     --color-white: white;
     --color-black: black;
+
+    --transition-fast-in-slow-out: 1.2s cubic-bezier(0.07, 0.4, 0.36, 1) 0.15s;
   }
   
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');

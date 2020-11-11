@@ -31,7 +31,7 @@ export const MoviesListEl = styled.li`
   :hover {
     > div > div {
       transform: translateX(calc(71% + 8rem));
-      transition: transform 0.8s cubic-bezier(0.07, 0.4, 0.36, 1) 0.15s, opacity 1.7s ease-in-out;
+      transition: transform 0.5s cubic-bezier(0.07, 0.4, 0.36, 1) 0.15s, opacity 1.5s ease-in-out;
       opacity: 1;
     }
     h2 {
@@ -82,7 +82,7 @@ export const VideoWrap = styled.div`
   position: relative;
   left: -71%;
   opacity: 0;
-  transition: transform 0.8s cubic-bezier(0.07, 0.4, 0.36, 1), opacity 2s ease-in-out;
+  transition: transform 0.8s cubic-bezier(0.07, 0.4, 0.36, 1), opacity 1.5s ease-in-out;
   will-change: transform;
   video {
     width: 100%;
