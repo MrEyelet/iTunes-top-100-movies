@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.js": "/iTunes-top-100-movies/static/js/main.efdf4fc5.chunk.js",
-    "main.js.map": "/iTunes-top-100-movies/static/js/main.efdf4fc5.chunk.js.map",
+    "main.js": "/iTunes-top-100-movies/static/js/main.261a720c.chunk.js",
+    "main.js.map": "/iTunes-top-100-movies/static/js/main.261a720c.chunk.js.map",
     "runtime-main.js": "/iTunes-top-100-movies/static/js/runtime-main.4bb605aa.js",
     "runtime-main.js.map": "/iTunes-top-100-movies/static/js/runtime-main.4bb605aa.js.map",
-    "static/js/2.38116e6b.chunk.js": "/iTunes-top-100-movies/static/js/2.38116e6b.chunk.js",
-    "static/js/2.38116e6b.chunk.js.map": "/iTunes-top-100-movies/static/js/2.38116e6b.chunk.js.map",
+    "static/css/2.563266e4.chunk.css": "/iTunes-top-100-movies/static/css/2.563266e4.chunk.css",
+    "static/js/2.ff66176b.chunk.js": "/iTunes-top-100-movies/static/js/2.ff66176b.chunk.js",
+    "static/js/2.ff66176b.chunk.js.map": "/iTunes-top-100-movies/static/js/2.ff66176b.chunk.js.map",
     "index.html": "/iTunes-top-100-movies/index.html",
-    "precache-manifest.2e901d784743da3a4f2eccaf6d437d7f.js": "/iTunes-top-100-movies/precache-manifest.2e901d784743da3a4f2eccaf6d437d7f.js",
+    "precache-manifest.88deefc388fe5986805386ed9a1c0b16.js": "/iTunes-top-100-movies/precache-manifest.88deefc388fe5986805386ed9a1c0b16.js",
     "service-worker.js": "/iTunes-top-100-movies/service-worker.js",
+    "static/css/2.563266e4.chunk.css.map": "/iTunes-top-100-movies/static/css/2.563266e4.chunk.css.map",
     "static/media/movies-bg.jpg": "/iTunes-top-100-movies/static/media/movies-bg.0ced787d.jpg",
     "static/media/old-tv.png": "/iTunes-top-100-movies/static/media/old-tv.c99178c6.png",
     "static/media/screen.gif": "/iTunes-top-100-movies/static/media/screen.8d60de1c.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.4bb605aa.js",
-    "static/js/2.38116e6b.chunk.js",
-    "static/js/main.efdf4fc5.chunk.js"
+    "static/css/2.563266e4.chunk.css",
+    "static/js/2.ff66176b.chunk.js",
+    "static/js/main.261a720c.chunk.js"
   ]
 }
