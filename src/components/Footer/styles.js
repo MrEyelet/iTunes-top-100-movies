@@ -25,11 +25,17 @@ export const TV = styled.div`
   background-size: contain;
   background-position: center;
   background-image: url(${retroTV});
-  overflow: hidden;
+  @media (max-width: 1024px) {
+    min-height: 30rem;
+  }
+  @media (max-width: 520px) {
+    margin: 0 auto;
+    min-height: 20rem;
+  }
 `
 export const BrokenScreen = styled.div`
   width: 81.7%;
-  min-height: 60rem;
+  min-height: 59.5rem;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -39,4 +45,10 @@ export const BrokenScreen = styled.div`
   background-size: contain;
   background-position: center;
   background-image: url(${screen});
+  @media (max-width: 1024px) {
+    min-height: 29.7rem;
+  }
+  @media (max-width: 520px) {
+    min-height: 19.7rem;
+  }
 `
