@@ -48,7 +48,7 @@ export default class FetchRandomMovies extends React.Component {
       <section>
         <MoviesList id="top100">
           {this.state.movies.map(item => (
-            <MoviesListEl data-sal="fade" key={item.title.label} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
+            <MoviesListEl data-sal="fade" data-sal="slide-up" data-sal-duration="1000" key={item.title.label} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
               <Title>
                 <span>{item.title.label}</span>
                 <span>{item.category.attributes.term}</span>
