@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
   :root {
+    --under-base-level: -100;
     --base-level: 0;
     --over-content: 100;
     --modal: 1000;

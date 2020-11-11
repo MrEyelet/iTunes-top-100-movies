@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
 import retroTV from "./assets/old-tv.png"
+import screen from "./assets/screen.gif"
 
 export const Root = styled.footer`
-  font-family: TTCommons-bold, sans-serif;
+  padding: 0 2rem;
   font-size: 1.2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
   @media (max-width: 520px) {
     padding: 2rem;
   }
@@ -15,12 +15,28 @@ export const Root = styled.footer`
     text-align: center;
   }
 `
-export const Retro = styled.div`
-  min-width: 120rem;
+export const TV = styled.div`
+  max-width: 96rem;
+  width: 100%;
   min-height: 60rem;
-  margin: 10rem 0;
+  margin: 10rem auto;
+  position: relative;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background-image: url(${retroTV});
+  overflow: hidden;
+`
+export const BrokenScreen = styled.div`
+  width: 81.7%;
+  min-height: 60rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: var(--under-base-level);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${screen});
 `
