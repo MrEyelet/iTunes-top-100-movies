@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/iTunes-top-100-movies/static/js/main.609b515e.chunk.js",
-    "main.js.map": "/iTunes-top-100-movies/static/js/main.609b515e.chunk.js.map",
+    "main.js": "/iTunes-top-100-movies/static/js/main.efdf4fc5.chunk.js",
+    "main.js.map": "/iTunes-top-100-movies/static/js/main.efdf4fc5.chunk.js.map",
     "runtime-main.js": "/iTunes-top-100-movies/static/js/runtime-main.4bb605aa.js",
     "runtime-main.js.map": "/iTunes-top-100-movies/static/js/runtime-main.4bb605aa.js.map",
     "static/js/2.38116e6b.chunk.js": "/iTunes-top-100-movies/static/js/2.38116e6b.chunk.js",
     "static/js/2.38116e6b.chunk.js.map": "/iTunes-top-100-movies/static/js/2.38116e6b.chunk.js.map",
     "index.html": "/iTunes-top-100-movies/index.html",
-    "precache-manifest.c13ca642e1243fba20a71b3f72f58706.js": "/iTunes-top-100-movies/precache-manifest.c13ca642e1243fba20a71b3f72f58706.js",
+    "precache-manifest.2e901d784743da3a4f2eccaf6d437d7f.js": "/iTunes-top-100-movies/precache-manifest.2e901d784743da3a4f2eccaf6d437d7f.js",
     "service-worker.js": "/iTunes-top-100-movies/service-worker.js",
     "static/media/movies-bg.jpg": "/iTunes-top-100-movies/static/media/movies-bg.0ced787d.jpg",
     "static/media/old-tv.png": "/iTunes-top-100-movies/static/media/old-tv.c99178c6.png",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.4bb605aa.js",
     "static/js/2.38116e6b.chunk.js",
-    "static/js/main.609b515e.chunk.js"
+    "static/js/main.efdf4fc5.chunk.js"
   ]
 }
