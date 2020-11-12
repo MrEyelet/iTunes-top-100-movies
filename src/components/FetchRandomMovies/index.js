@@ -21,7 +21,9 @@ export default class FetchRandomMovies extends React.Component {
     //   console.log(data.feed.entry.summary.label)
     //   console.log(data.feed.entry[0].summary.label)
     // }
-    sal()
+    sal({
+      threshold: 0.1
+    })
   }
 
   mouseEnter = e => {
