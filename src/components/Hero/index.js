@@ -9,7 +9,7 @@ export default class Hero extends React.Component {
       <Banner>
         <img src={banner} alt="banner" />
         <LeadText>
-          <h1>Top 100 movies you can't miss</h1>
+          <h1 data-text="Top 100 movies you can't miss">Top 100 movies you can't miss</h1>
           <p>Top hundred movies fetched from iTunes API</p>
           <a href="#top100">see them all</a>
         </LeadText>

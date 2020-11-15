@@ -26,12 +26,4 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  .logo {
-    width: 4rem;
-    display: flex;
-    align-items: center;
-    img {
-      width: 100%;
-    }
-  }
 `
