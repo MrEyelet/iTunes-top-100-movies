@@ -37,7 +37,7 @@ export const LeadText = styled.div`
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
-    font-size: 10rem;
+    font-size: 14rem;
     line-height: 0.9;
     font-weight: ${({ theme }) => theme.font.weight.bold};
     font-style: italic;
@@ -273,7 +273,10 @@ export const LeadText = styled.div`
       }
     }
     @media (max-width: 1024px) {
-      font-size: 5rem;
+      font-size: 9rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 6rem;
     }
     @media (max-width: 520px) {
       font-size: 4rem;
