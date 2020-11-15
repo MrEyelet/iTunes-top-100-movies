@@ -21,7 +21,7 @@ export const Banner = styled.div`
   }
 `
 export const LeadText = styled.div`
-  width: 100%;
+  width: 95%;
   padding: 0 2rem;
   position: absolute;
   top: 50%;
