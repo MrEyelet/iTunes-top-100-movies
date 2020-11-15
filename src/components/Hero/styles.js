@@ -280,6 +280,7 @@ export const LeadText = styled.div`
     }
   }
   p {
+    margin-top: 4rem;
     font-size: 2rem;
     @media (max-width: 520px) {
       font-size: 1.6rem;
